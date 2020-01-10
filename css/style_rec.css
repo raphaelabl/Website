@@ -20,6 +20,13 @@ header{
   z-index: 1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
 
 .logo{
   width: 140px;

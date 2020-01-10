@@ -5,7 +5,7 @@ function getInputValue(){
   var inhalt = "";
 
   if(emailInput == "" || passwordInput == ""){
-    alert("Abc");
+    alert("Daten wurden abgesendet");
   }
   else{
 

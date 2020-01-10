@@ -20,6 +20,14 @@ header{
   z-index: 1;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 #logo{
   width: 140px;
