@@ -10,6 +10,7 @@ hr{  width: 30px;  height: 3px;  background: #494949;  border: 0;  margin: 0 aut
 #logo, li, img, .button{transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
 /***HEADER*****************************************************************************************/
 
+
 header{
   width: 100%;
   height: 65px;
@@ -74,7 +75,7 @@ header{
 }
 
 .icon-cog:before {
-	content: "\e010";
+  content: "\e010";
 }
 
 
