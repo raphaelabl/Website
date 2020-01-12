@@ -1,4 +1,4 @@
-html, body{margin: 0; padding: 0; height: 100%; text-align: center;background: #f0f0f0}
+html, body{margin: 0; padding: 0; height: 100%; text-align: center;background: #f0f0f0;}
 section{min-height: 100%;}
 a {text-decoration: none;}
 li{list-style-type: none;}
@@ -22,10 +22,6 @@ header{
 
 html {
   scroll-behavior: smooth;
-=======
-html {
-  scroll-behavior: smooth;
->>>>>>> 6ebafd98a282132fe4a8dc57e8aa12239d75b5d8
 }
 
 .logo{
