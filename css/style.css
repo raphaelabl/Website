@@ -1,4 +1,4 @@
-html, body{margin: 0; padding: 0;  height: 100%;text-align: center; background-color: #0000000;}
+html, body{margin: 0; padding: 0;  height: 100%;text-align: center; background-color: #0000000;scroll-behavior: smooth;}
 section{min-height: 100%;}
 a {text-decoration: none;}
 li{list-style-type: none;}
@@ -9,6 +9,7 @@ h4, p{font-family: 'Roboto Slab' , serif; color: #494949;}
 hr{  width: 30px;  height: 3px;  background: #494949;  border: 0;  margin: 0 auto 40px auto;}
 #logo, li, img, .button{transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
 /***HEADER*****************************************************************************************/
+
 
 header{
   width: 100%;
@@ -63,7 +64,6 @@ header{
 .icon-star:after,
 .icon-plus:after,
 .icon-file:before {
-	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -75,11 +75,9 @@ header{
 }
 
 .icon-cog:before {
-	content: "\e010";
+  content: "\e010";
 }
 
-
-/* Button 5 */
 .btn-5 {
 	background: #000000;
 	color: #fff;
@@ -135,15 +133,6 @@ header{
 
 
 
-
-
-
-
-
-
-html {
-  scroll-behavior: smooth;
-}
 
 .logo{
   width: 240px;
