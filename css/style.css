@@ -34,7 +34,7 @@ header{
 	color: inherit;
 	background: none;
 	cursor: pointer;
-	padding: 25px 80px;
+	padding: 25px 20px;
 	display: inline-block;
 	margin: 15px 30px;
 	text-transform: uppercase;
@@ -45,6 +45,7 @@ header{
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+  border-radius: 5px;
 }
 
 .btn:after {
@@ -80,7 +81,7 @@ header{
 	background: #000000;
 	color: #fff;
 	height: 15px;
-	min-width: 260px;
+	min-width: 120px;
 	line-height: 6px;
 	font-size: 15px;
 	overflow: hidden;
