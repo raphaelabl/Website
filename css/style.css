@@ -75,7 +75,7 @@ header{
 }
 
 .icon-cog:before {
-  content: "\e02d";
+  content: "";
 }
 
 .btn-5 {
