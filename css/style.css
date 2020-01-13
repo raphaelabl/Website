@@ -24,15 +24,24 @@ header{
 
 .dark-mode {
   background-color: black;
-  background: url(../rsc/backgrounddarkmode.png);
   color: white;
 }
 
+
 /* General button style (reset) */
 .btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
 	cursor: pointer;
+	padding: 25px 80px;
 	display: inline-block;
+	margin: 15px 30px;
 	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
 	outline: none;
 	position: relative;
 	-webkit-transition: all 0.3s;
@@ -82,9 +91,15 @@ header{
 	backface-visibility: hidden;
 }
 
-  style-type: none;
+.btn-5 span {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.3s;
 	-webkit-backface-visibility: hidden;
+	-moz-transition: all 0.3s;
 	-moz-backface-visibility: hidden;
+	transition: all 0.3s;
 	backface-visibility: hidden;
 }
 
@@ -115,6 +130,14 @@ header{
 .btn-5b:hover:before {
 	left: 0;
 }
+
+
+
+
+
+
+
+
 
 html {
   scroll-behavior: smooth;
@@ -173,7 +196,7 @@ header nav ul li:hover{
 }
 
 #home h2{
-  margin: 0 auto 10px auto;
+  margin: 0 auto 0 auto;
   font-size: 25px;
 }
 
