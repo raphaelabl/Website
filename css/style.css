@@ -27,8 +27,6 @@ header{
   color: white;
 }
 
-
-/* General button style (reset) */
 .btn {
 	border: none;
 	font-family: inherit;
@@ -114,7 +112,6 @@ header{
 	transition: all 0.3s;
 }
 
-/* Button 5b */
 .btn-5b:hover span {
 	-webkit-transform: translateX(10%);
 	-moz-transform: translateX(200%);
@@ -130,14 +127,6 @@ header{
 .btn-5b:hover:before {
 	left: 0;
 }
-
-
-
-
-
-
-
-
 
 html {
   scroll-behavior: smooth;
