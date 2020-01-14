@@ -2,7 +2,7 @@ html, body{margin: 0; padding: 0;  height: 100%;text-align: center; background-c
 section{min-height: 100%;}
 a {text-decoration: none;}
 li{list-style-type: none;}
-h1, h2, h3, a{font-family: 'Roboto' , sans-serif; font-weight: 500; color: #494949; text-transform: uppercase;}
+h1, h2, h3, a, span{font-family: 'Roboto' , sans-serif; font-weight: 500; color: #494949; text-transform: uppercase;}
 h2{color: #5D7177;}
 h3{font-size: 40px; padding-top: 8%; margin-bottom: 5px;}
 h4, p{font-family: 'Roboto Slab' , serif; color: #494949;}
@@ -10,6 +10,10 @@ hr{  width: 30px;  height: 3px;  background: #494949;  border: 0;  margin: 0 aut
 #logo, li, img, .button{transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
 /***HEADER*****************************************************************************************/
 
+
+span{
+  color: #ffff;
+}
 
 header{
   width: 100%;
@@ -26,6 +30,9 @@ header{
   background-color: black;
   color: white;
 }
+
+
+/*** DARKMODE BUTTON ***************************************************************************++****/
 
 .btn {
 	border: none;
@@ -49,7 +56,6 @@ header{
 }
 
 .btn:after {
-	content: '';
 	position: absolute;
 	z-index: -1;
 	-webkit-transition: all 0.3s;
