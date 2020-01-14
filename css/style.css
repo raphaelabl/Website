@@ -41,7 +41,7 @@ header{
 	color: inherit;
 	background: none;
 	cursor: pointer;
-	padding: 25px 20px;
+	padding: 15px 15px;
 	display: inline-block;
 	margin: 15px 30px;
 	text-transform: uppercase;
@@ -87,8 +87,7 @@ header{
 	background: #000000;
 	color: #fff;
 	height: 15px;
-	min-width: 120px;
-	line-height: 6px;
+  line-height: 3px;
 	font-size: 15px;
 	overflow: hidden;
 	-webkit-backface-visibility: hidden;
@@ -112,7 +111,7 @@ header{
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	line-height: 1.9;
+	line-height: 19;
 	font-size: 180%;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
