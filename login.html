@@ -22,10 +22,17 @@
 			</div>
 			<nav id="mainnav">
 				<ul>
+					<button style="margin-top: -200px;margin-right: -45px;" class="btn btn-5 btn-5b icon-cog" onclick="myFunction()"><span>DarkMode</span></button>
+					<script>
+					function myFunction() {
+					   var element = document.body;
+					   element.classList.toggle("dark-mode");
+					}
+					</script>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="index.html#recommendation">Game selection</a></li>
 					<li><a href="index.html#gamesinfo">Gaming Information</a></li>
-					<li><a href="register.html">Register</a></li>
+					<li><a href="login.html">Login | Register</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -42,7 +49,7 @@
 	  </section>
 <!-----------Footer----------------------------------------------------------------->
 		<footer>
-			<p>&copy; 2017-2018 GameMet / Raphael Ablinger, Christoph Handel<a>|</a><a href="#">Impressum</a></p>
+			<p>&copy; 2019-2020 GameMet / Raphael Ablinger, Christoph Handel<a>|</a><a href="#">Impressum</a></p>
 		</footer>
 	</body>
 </html>

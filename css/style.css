@@ -80,7 +80,7 @@ header{
 }
 
 .icon-cog:before {
-  content: "asd";
+  content: "\e010";
 }
 
 .btn-5 {
