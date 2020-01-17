@@ -388,38 +388,3 @@ footer a{
   padding-top: 30px;
   font-size: 12px;
 }
-/***MEDIA QUERITIES*****************************************************************************************/
-/***TABLETT*****************************************************************************************/
-
-@media screen and (max-width: 1024px) {
-  header{
-    height: auto;
-
-  }
-    #logo{
-      width: 100px;
-      margin-top: 5px;
-    }
-    header nav{
-      margin-top: 0;
-    }
-
-
-}
-
-/***MOILE*****************************************************************************************/
-@media screen and (max-width: 480px) {
-
-
-}
-/***LOGIN*****************************************************************************************/
-#login{
-  background: url(../rsc/loginbackground.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-#login form{
-    padding-top: 23%;
-}
