@@ -30,6 +30,7 @@ function insert(username, password){
     con.connect(function(err){
       if(err) throw err;
     });
+    
     con.query("INSERT INTO customers (name, password) VALUES (?, ?)", [username, password], function(err, result){
       if(err) throw err;
     });
@@ -39,7 +40,6 @@ function insert(username, password){
 }
 
 app.post('/login-backend', function(req, res){
-  res.send(req.body.username_input + " " + req.body.password_input)
   insert(req.body.username_input ,req.body.password_input);
 });
 
