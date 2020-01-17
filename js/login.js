@@ -11,21 +11,31 @@ app.get('/', function(req, res){
 });
 
 function insert(username, password){
-  var con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "Apschi2001",
-    database: "mydb"
-  });
+  var isRight = 0;
 
-  con.connect(function(err){
-    if(err) throw err;
-  });
+  for(var i = 0; i < username.length; i++){
+    if(username.charAt(i) == "\"" ||
+     password.charAt(i) == "\""){
+      isRight = 1;
+    }
+  }
+  if(isRight == 0){
+    var con = mysql.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "Apschi2001",
+      database: "mydb"
+    });
 
-  con.query("INSERT INTO customers (name, password) VALUES (?, ?)", [username, password], function(err, result){
-    if(err) throw err;
-  });
-  con.end();
+    con.connect(function(err){
+      if(err) throw err;
+    });
+    con.query("INSERT INTO customers (name, password) VALUES (?, ?)", [username, password], function(err, result){
+      if(err) throw err;
+    });
+    con.end();
+  }
+  
 }
 
 app.post('/login-backend', function(req, res){
