@@ -186,7 +186,7 @@ header nav ul li:hover{
 
 #home h1{
   margin: 37% auto 0 auto;
-  font-size: 10px;
+  font-size: 100px;
 }
 
 #home h2{
@@ -273,6 +273,7 @@ header nav ul li:hover{
 
 #recommendation{
   background: url(../rsc/mainBackground.jpg);
+
   background-attachment: fixed;
   margin-top: -40px;
 }
