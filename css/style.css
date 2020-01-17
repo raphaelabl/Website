@@ -185,8 +185,11 @@ header nav ul li:hover{
 }
 
 #home h1{
+  
+  background-color:rgba(255, 255, 255, 1);
   margin: 37% auto 0 auto;
   font-size: 110px;
+  
 }
 
 #home h2{
