@@ -276,6 +276,7 @@ header nav ul li:hover{
 
 #recommendation{
   background: url(../rsc/mainBackground.jpg);
+
   background-attachment: fixed;
   margin-top: -40px;
 }
