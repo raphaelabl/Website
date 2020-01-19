@@ -41,6 +41,7 @@ function insert(username, password){
 
 app.post('/login-backend', function(req, res){
   insert(req.body.username_input ,req.body.password_input);
+  res.sendFile(path.join("C:/Users/ablin/OneDrive/Dokumente/GitHub/Website/logincorrect.html"));
 });
 
 const server = app.listen(80, function(){
