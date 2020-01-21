@@ -183,12 +183,14 @@ header nav ul li:hover{
   background-size: cover;
 }
 
-#home h1{
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 100px;
-  margin-bottom: 0;
-  padding-left: 50px;
-  padding-right: 50px;
+#home h1{  
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -115%);
+  width: 100%;
+  color: #606060;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-left: 50%;
   font-size: 100px;
 }
 
