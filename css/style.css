@@ -286,18 +286,15 @@ header nav ul li:hover{
   margin-top: -40px;
 }
 
-#rec{
-  margin-left: 15%;
-}
-
 #rec ul{
+    margin-left: 8%;
     padding: 0;
 }
 
 #rec ul li{
   width: 150px;
   float: left;
-  margin-left: 30px;
+  margin-left: 2%;
   margin-bottom: 15px;
 }
 
