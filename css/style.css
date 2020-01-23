@@ -319,7 +319,7 @@ header nav ul li:hover{
 
 .infoButtons{
   border-color: rgb(120, 120, 120);
-  border: 2px solid #a0a0a0;
+  border: 2px solid #a0a0a0 ;
   color: gray;
   font-size: 30px;
   padding: 15px 32px;
