@@ -9,17 +9,21 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	</head>
 
 	<body>
 		<!------HEADER----------------------------------------------------------------->
-		<header>
-			<div class="logo">
+		<header style="padding-top: 10px;">
+			<div style="padding-top: 10px;" class="logo">
 			<h1>GΛmΞ MΞΞt</h1>
 			</div>
 			<nav id="mainnav">
 				<ul>
-					<button style="margin-top: -200px;margin-right: -45px;"class="btn btn-5 btn-5b icon-cog" onclick="myFunction()"><span>DarkMode</span></button>
+					<button style="margin-top: -200px;margin-right: -45px;" class="btn btn-5 btn-5b icon-cog" onclick="myFunction()"><span>DarkMode</span></button>
 					<script>
 					function myFunction() {
 					   var element = document.body;
@@ -36,47 +40,45 @@
 
 		<!-----------Home----------------------------------------------------------------->
 
-		<section id="home">
-			<div class="w3-content w3-section">
-				<img class="mySlides" class="animated animatedFadeInUp fadeInUp" src="rsc/slideshow wallpaper/slideshow01.jpg" style="width:100%; background-attachment: fixed;">
-				<img class="mySlides" src="rsc/slideshow wallpaper/slideshow06.jpg" style="width:100%; background-attachment: fixed;">
-				<img class="mySlides" src="rsc/slideshow wallpaper/slideshow03.jpg" style="width:100%; background-attachment: fixed;">
-				<img class="mySlides" src="rsc/slideshow wallpaper/slideshow04.jpg" style="width:100%; background-attachment: fixed;">
-				<img class="mySlides" src="rsc/slideshow wallpaper/slideshow05.jpg" style="width:100%; background-attachment: fixed;">
-				<img class="mySlides" src="rsc/slideshow wallpaper/slideshow02.jpg" style="width:100%; background-attachment: fixed;">
-				<img class="mySlides" src="rsc/slideshow wallpaper/slideshow07.png" style="width:100%; background-attachment: fixed;">
-				<img class="mySlides" src="rsc/slideshow wallpaper/slideshow07.jpg" style="width:100%; background-attachment: fixed;">
-				<img class="mySlides" src="rsc/slideshow wallpaper/slideshow08.jpg" style="width:100%; background-attachment: fixed;">
+		<section id="home"
+
+					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2500">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="rsc/slideshow wallpaper/slideshow01.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="rsc/slideshow wallpaper/slideshow02.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="rsc/slideshow wallpaper/slideshow03.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="rsc/slideshow wallpaper/slideshow04.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="rsc/slideshow wallpaper/slideshow05.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="rsc/slideshow wallpaper/slideshow06.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="rsc/slideshow wallpaper/slideshow07.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="rsc/slideshow wallpaper/slideshow08.jpg">
+				</div>
 			</div>
-
-		<script>
-		var myIndex = 0;
-		carousel();
-
-		function carousel() {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  for (i = 0; i < x.length; i++) {
-		    x[i].style.display = "none";
-		  }
-		  myIndex++;
-		  if (myIndex > x.length) {myIndex = 1}
-		  x[myIndex-1].style.display = "block";
-		  setTimeout(carousel, 3500);
-		}
-		</script>
-			<h1>GΛmΞ mΞΞt</h1>
-			<div class="centered">
-				<h2>Meet Your Play Partner</h2>
-				<a href="#recommendation"><img src="rsc/pfeil.png" alt="Pfeil"></a>
+			<h1 style="padding-left: 470px;">GΛmΞ mΞΞt</h1>			<div class="centered">
+			<h2 style="padding-bottom: 140px;">Meet Your Play Partner</h2>
+			<img src="rsc/pfeil.png" alt="Pfeil" style="margin-left: 140px;">
 			</div>
 		</section> <!---HOME SECTION--->
 
 		<!---Game recommendation----------------------------------------------------------------->
 		<section id="recommendation">
 			<div id="styling">
-				<h3>GAME SELECTION</h3>
-				<hr>
+				<h3 style="padding-left: 610px;">GAME SELECTION</h3>
 				<div id="rec">
 					<ul>
 						<li><a href="rec1.html"><img src="rsc/rec1.jpg" alt="rec1"></a></li>
@@ -93,11 +95,7 @@
 		</section>
 
 		<section id="gamesinfo">
-			<ul>
-				<li>
-					<button class="infoButtons">Next Releases</button>
-				</li>
-			</ul>
+
 		</section>
 
 		<!---Game selection----------------------------------------------------------------->
@@ -122,7 +120,5 @@
 
 <!-----------Footer----------------------------------------------------------------->
 		<footer>
-
-			<p>&copy; 2017-2018 GameMet / Raphael Ablinger,Christoph Handel <a>|</a><a href="impressum.html">Impressum</a><a href="links.html">		</footer>
-	</body>
+<p style="padding-left: 500px;">© 2017-2018 GameMet / Raphael Ablinger,Christoph Handel <a>|</a><a href="impressum.html">Impressum</a><a href="links.html">		</a></p>	</body>
 </html>
