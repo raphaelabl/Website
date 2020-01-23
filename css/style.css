@@ -314,7 +314,16 @@ header nav ul li:hover{
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
 }
 
+#gamesinfo{
+}
 
+.infoButtons{
+  border-color: rgb(120, 120, 120);
+  border: 2px solid #a0a0a0;
+  color: gray;
+  font-size: 30px;
+  padding: 15px 32px;
+}
 
 /***CONTACT*****************************************************************************************/
 #contact{
