@@ -1,6 +1,6 @@
 html, body{margin: 0; padding: 0;  height: 100%;text-align: center; background-color: #000000;}
 section{min-height: 100%;}
-a {text-decoration: none!important;}
+a {text-decoration: none!important; color: white!important}
 li{list-style-type: none;}
 h1, h2, h3, a{font-family: 'Roboto' , sans-serif; font-weight: 500; color: #494949; text-transform: uppercase;}
 h2{color: #5D7177;}
@@ -183,7 +183,7 @@ header nav ul li:hover{
   background-size: cover;
 }
 
-#home h1{  
+#home h1{ 
   position: absolute;
   top: 50%;
   transform: translate(-50%, -60%);
