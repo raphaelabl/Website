@@ -22,7 +22,7 @@ function insert(username, password){
     con.connect(function(err){
       if(err) throw err;
     });
-    
+
     con.query("INSERT INTO customers (name, password) VALUES (?, ?)", [username, password], function(err, result){
       if(err) throw err;
     });
@@ -31,9 +31,7 @@ function insert(username, password){
 
 app.post('/login-backend', function(req, res){
 
-  let username = req.body.username_input;
-  let password = req.body.password_input;
-
+  let username = req.body.username_input, password = req.body.password_input;
   var isRight = 0;
 
   for(var i = 0; i < username.length; i++){
@@ -47,7 +45,6 @@ app.post('/login-backend', function(req, res){
     insert(req.body.username_input ,hashCode(req.body.password_input));
     res.sendFile(path.join("C:/Users/ablin/OneDrive/Dokumente/GitHub/Website/logincorrect.html"));
   }
-  
 });
 
 const server = app.listen(80, function(){
