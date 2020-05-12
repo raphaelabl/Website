@@ -4,7 +4,9 @@ const app = express();
 var mysql = require('mysql');
 var path = require('path');
 
-app.use(express.urlencoded({extended: true}));
+//app.use(express.urlencoded({extended: true}));
+
+app.use('../', express.static(__dirname + '/index.html'));
 
 app.get('/', function(req, res){
   res.sendFile(path.join("C:/Users/ablin/OneDrive/Dokumente/GitHub/Website/login.html"));
@@ -45,6 +47,7 @@ app.post('/login-backend', function(req, res){
     insert(req.body.username_input ,hashCode(req.body.password_input));
     res.sendFile(path.join("C:/Users/ablin/OneDrive/Dokumente/GitHub/Website/logincorrect.html"));
   }
+
 });
 
 const server = app.listen(80, function(){
