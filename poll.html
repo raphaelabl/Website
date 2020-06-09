@@ -21,44 +21,30 @@
 		<link rel="stylesheet" type="text/css" href="css/style_poll.css">
 	</head>
 		<!------HEADER----------------------------------------------------------------->
-		<header>
-			<div class="logo">
-				<a href="index.html"><h1>GΛmΞ MΞΞt</h1></a>
-			</div>
-			<nav id="mainnav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-				</ul>
-			</nav>
-		</header>
-
 		
+		</head>
+			<body style="overflow: hidden; padding-bottom: 50px !important;">
+				<div class="header">
+					<a class="logo">GΛMΞ MΞΞT</a>
+					<div class="header-right">
+					</div>
+				</div>
+			</body>
+		</head>
+		<!----Body------------------------------------------------------------------->>
 		<body>
 			<div style="display: none;">
-			  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-				 <defs>
-				   <filter id="goo">
-					 <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-					 <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-					 <feComposite in2="goo" in="SourceGraphic" result="mix" />
-				   </filter>
-				 </defs>
-				 <g xmlns="http://www.w3.org/2000/svg" id="ltmWrapper" data-name="container">
-					 <path class="ltm-Line" d="M0,0V94.85H25V25H406.76V386.76H153.29v25H431.76V0ZM25,119.66H0v292.1H128.47v-25H25Z"/>
-					 <polygon class="ltm-T" points="90.46 144.44 129.09 144.44 129.09 292.14 153.91 292.14 153.91 144.44 192.54 144.44 192.54 119.62 90.46 119.62 90.46 144.44"/>
-					 <polygon class="ltm-M" points="316.49 119.62 316.49 119.64 316.33 119.62 278.4 219.29 240.47 119.62 240.25 119.65 240.25 119.62 215.43 119.62 215.43 292.14 240.25 292.14 240.25 186.86 278.4 292.14 316.49 187.03 316.49 292.14 341.3 292.14 341.3 119.62 316.49 119.62"/>
-				 </g>
-			   </svg>
 			 </div>
 			 <nav>
 			  <div class="nav-logo">
 			   <svg><use xlink:href="#ltmWrapper" transform="scale(0.1)"></use></svg>
 			  </div>
-			  <div class="right-actions">
-			   <button class="btn">button 1</button>
+			  <div class="right-actions" style="padding-top: 20px !important;">
+				<a href="index.html"><button class="btn">Home</button></a>
 			   <button id="sResults" class="btn">Show Results</button>
 			  </div>
 			 </nav>
+
 			 <section class="poll-wrapper">
 			  <div class="choices-wrapper">
 			   <div class="poll-item ch1">
@@ -245,6 +231,7 @@
 			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 			<script src="css/java_script.js"></script>
 		  </body>
+
 		<footer>
     <p>© 2017-2018 GameMet / Raphael Ablinger,Christoph Handel <a>|</a><a href="impressum.html">Impressum</a> | <a href="links.html">Links</a>
     </p>
