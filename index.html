@@ -19,7 +19,6 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-
 	</head>
 	<body>
 		<!------HEADER----------------------------------------------------------------->
@@ -37,8 +36,8 @@
 					}
 					</script>--->
 					<li><a href="">Home</a></li>
+					<li><a href="poll.html">Game Poll</a></li>
 					<li><a href="#recommendation">Game Selection</a></li>
-					<li><a href="#voting">Game Poll</a></li>
 					<li><a href="#gamesinfo">Gaming Information</a></li>
 				</ul>
 			</nav>
@@ -100,55 +99,6 @@
 					<li><a href="rec7.html"><img src="rsc/rec7.jpg" alt="rec7"></a></li>
 				</ul>
 			</div>
-		</section>
-
-		<!---Game voting----------------------------------------------------------------->
-		<section id="voting">
-			<h3>Game Poll</h3>
-			<hr>
-			<br>
-			<div class="container">  
-            <br />  
-            <br />
-			<br />
-			<h2 align="center">Most popular games at the moment!</h2><br />
-			<div class="row">
-				<div class="col-md-6">
-				<form method="post" id="poll_form">
-				<h3>Which is the most played game?</h3>
-				<br />
-				<div class="radio">
-				<label><h4><input type="radio" name="poll_option" class="poll_option" value="Laravel" /> Call of Duty Warzone</h4></label>
-				</div>
-				<div class="radio">
-				<label><h4><input type="radio" name="poll_option" class="poll_option" value="CodeIgniter" /> Fifa 20</h4></label>
-				</div>
-				<div class="radio">
-				<label><h4><input type="radio" name="poll_option" class="poll_option" value="CakePHP" /> Fortnite</h4></label>
-				</div>
-				<div class="radio">
-				<label><h4><input type="radio" name="poll_option" class="poll_option" value="Symfony" /> Minecraft</h4></label>
-				</div>
-				<div class="radio">
-				<label><h4><input type="radio" name="poll_option" class="poll_option" value="Phalcon" /> Overwatch</h4></label>
-				</div>
-				<br />
-				<input type="submit" name="poll_button" id="poll_button" class="btn btn-primary" />
-				</form>
-				<br />
-				</div>
-				<div class="col-md-6">
-				<br />
-				<br />
-				<br />
-				<h4>Live Result</h4><br />
-				<div id="poll_result"></div>
-				</div>
-			</div>
-			<br />
-			<br />
-			<br />
-			</div>	
 		</section>
 
 		<!---Game information----------------------------------------------------------------->

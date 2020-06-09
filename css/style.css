@@ -315,6 +315,43 @@ header nav ul li:hover{
   -o-transform: scale(1.1);
 }
 
+/******RECOMMENDATION*****************************************************************************************/
+
+#voting{
+  background: url(../rsc/mainBackground.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+#rec ul{
+    margin-left: 8%;
+    padding: 0;
+}
+
+#rec ul li{
+  width: 150px;
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 15px;
+}
+
+#rec img{
+  opacity: 0.8;
+  width: 161px;
+  height: 510px;
+  border-radius: 2px;
+}
+
+#rec img:hover{
+  opacity: 1;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
 /***FOOTER*****************************************************************************************/
 footer{
   width: 100%;
