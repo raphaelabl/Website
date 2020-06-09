@@ -192,7 +192,7 @@ nav .nav-logo svg * {
   background-color: #eb5439;
 }
 .choices-wrapper .poll-item.ch1:before {
-  background-image: url(http://unsplash.it/601);
+  background-image: url(https://images5.alphacoders.com/700/thumb-1920-700496.jpg);
 }
 .choices-wrapper .poll-item.ch1 .vote {
   color: #eb5439;
@@ -208,7 +208,7 @@ nav .nav-logo svg * {
   background-color: #2e3dd8;
 }
 .choices-wrapper .poll-item.ch2:before {
-  background-image: url(http://unsplash.it/602);
+  background-image: url(https://media.playcentral.de/wp-content/uploads/2020/03/09182306/Valorant-Viper.jpg);
 }
 .choices-wrapper .poll-item.ch2 .vote {
   color: #2e3dd8;
@@ -224,7 +224,7 @@ nav .nav-logo svg * {
   background-color: #01a1a1;
 }
 .choices-wrapper .poll-item.ch3:before {
-  background-image: url(http://unsplash.it/603);
+  background-image: url(https://wallpapercave.com/wp/wp4905843.jpg);
 }
 .choices-wrapper .poll-item.ch3 .vote {
   color: #01a1a1;
@@ -240,7 +240,7 @@ nav .nav-logo svg * {
   background-color: #737486;
 }
 .choices-wrapper .poll-item.ch4:before {
-  background-image: url(http://unsplash.it/604);
+  background-image: url(https://store-images.s-microsoft.com/image/apps.5292.13835473807186336.9510cd97-f71a-49b0-9e5c-0877f4bc9de3.b5893ca4-bb2d-4329-9be4-41bb1829ee84?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF);
 }
 .choices-wrapper .poll-item.ch4 .vote {
   color: #737486;
@@ -256,7 +256,7 @@ nav .nav-logo svg * {
   background-color: #69c033;
 }
 .choices-wrapper .poll-item.ch5:before {
-  background-image: url(http://unsplash.it/605);
+  background-image: url(https://fullhdpictures.org/wp-content/uploads/2020/01/League-of-Legends-Desktop.jpg);
 }
 .choices-wrapper .poll-item.ch5 .vote {
   color: #69c033;
@@ -294,7 +294,7 @@ nav .nav-logo svg * {
   -webkit-transition: 335ms cubic-bezier(0.4, 0, 0.2, 1) all;
   transition: 335ms cubic-bezier(0.4, 0, 0.2, 1) all;
   z-index: 4;
-  background-color: #fff;
+  background-color: gray;
   padding: 20px;
   padding-top: 75px;
 }
