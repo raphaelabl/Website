@@ -20,6 +20,13 @@
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
 	</head>
 	<body>
 		<!------HEADER----------------------------------------------------------------->
@@ -38,8 +45,10 @@
 					</script>--->
 					<li><a href="">Home</a></li>
 					<li><a href="#recommendation">Game selection</a></li>
-					<li><a href="#gamesinfo">Gaming Information</a></li>
+					<li><a href="#voting">Game Voting</a></li>
+					<li><a href="#work">Gaming Information</a></li>
 					<li><a href="http://localhost/">Login | Register</a></li>
+
 				</ul>
 			</nav>
 		</header>
@@ -86,7 +95,7 @@
 
 		<!---Game recommendation----------------------------------------------------------------->
 		<section id="recommendation">
-			<h3>GAME SELECTION</h3>
+			<h3>GAME Selection</h3>
 			<hr>
 			<br/>
 			<div id="rec">
@@ -103,180 +112,212 @@
 		</section>
 
 
-<!---Game selection----------------------------------------------------------------->
-<section id="work">
-	<div class="container my-4">
-	<hr class="my-4">
-	<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-		<div class="controls-top">
-			<a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-			<a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-		</div>
-		<ol class="carousel-indicators">
-			<li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-			<li data-target="#multi-item-example" data-slide-to="1"></li>
-			<li data-target="#multi-item-example" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner" role="listbox">
-			<div class="carousel-item active">
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card mb-2">
-							<img class="card-img-top" src="rsc/rec1.jpg"
-								alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Card title</h4>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-									card's content.</p>
-								<a class="btn btn-primary">Button</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 clearfix d-none d-md-block">
-						<div class="card mb-2">
-							<img class="card-img-top" src="rsc/rec2.jpg"
-								alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Card title</h4>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-									card's content.</p>
-								<a class="btn btn-primary">Button</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 clearfix d-none d-md-block">
-						<div class="card mb-2">
-							<img class="card-img-top" src="rsc/rec3.jpg"
-								alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Card title</h4>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-									card's content.</p>
-								<a class="btn btn-primary">Button</a>
-							</div>
-						</div>
-					</div>
+		<!---Game Voting----------------------------------------------------------------->
+		<section id="voting">
+			<h3>Game Voting</h3>
+			<hr>
+			<br>
+			<div class="container">  
+            <br />  
+            <br />
+			<br />
+			<h2 align="center">Most popular games at the moment!</h2><br />
+			<div class="row">
+				<div class="col-md-6">
+				<form method="post" id="poll_form">
+				<h3>Which is the most played game?</h3>
+				<br />
+				<div class="radio">
+				<label><h4><input type="radio" name="poll_option" class="poll_option" value="Laravel" /> Call of Duty Warzone</h4></label>
 				</div>
+				<div class="radio">
+				<label><h4><input type="radio" name="poll_option" class="poll_option" value="CodeIgniter" /> Fifa 20</h4></label>
+				</div>
+				<div class="radio">
+				<label><h4><input type="radio" name="poll_option" class="poll_option" value="CakePHP" /> Fortnite</h4></label>
+				</div>
+				<div class="radio">
+				<label><h4><input type="radio" name="poll_option" class="poll_option" value="Symfony" /> Minecraft</h4></label>
+				</div>
+				<div class="radio">
+				<label><h4><input type="radio" name="poll_option" class="poll_option" value="Phalcon" /> Overwatch</h4></label>
+				</div>
+				<br />
+				<input type="submit" name="poll_button" id="poll_button" class="btn btn-primary" />
+				</form>
+				<br />
+				</div>
+				<div class="col-md-6">
+				<br />
+				<br />
+				<br />
+				<h4>Live Result</h4><br />
+				<div id="poll_result"></div>
+				</div>
+			</div>
+			<br />
+			<br />
+			<br />
+			</div>	
+		</section>
+		<!---Game information----------------------------------------------------------------->
+		<section id="work">
+			<div class="container my-4">
+			<hr class="my-4">
+			<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+				<div class="controls-top">
+					<a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+					<a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+				</div>
+				<ol class="carousel-indicators">
+					<li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+					<li data-target="#multi-item-example" data-slide-to="1"></li>
+					<li data-target="#multi-item-example" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card mb-2">
+									<img class="card-img-top" src="rsc/rec1.jpg"
+										alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title">Card title</h4>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+											card's content.</p>
+										<a class="btn btn-primary">Button</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 clearfix d-none d-md-block">
+								<div class="card mb-2">
+									<img class="card-img-top" src="rsc/rec2.jpg"
+										alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title">Card title</h4>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+											card's content.</p>
+										<a class="btn btn-primary">Button</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 clearfix d-none d-md-block">
+								<div class="card mb-2">
+									<img class="card-img-top" src="rsc/rec3.jpg"
+										alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title">Card title</h4>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+											card's content.</p>
+										<a class="btn btn-primary">Button</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--/.First slide-->
+
+					<!--Second slide-->
+					<div class="carousel-item">
+
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card mb-2">
+									<img class="card-img-top" src="rsc/rec7.jpg"
+										alt="Card image cap">
+									<div class="card-body">
+										<a class="btn btn-primary">Button</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 clearfix d-none d-md-block">
+								<div class="card mb-2">
+									<img class="card-img-top" src="rsc/rec1.jpg"
+										alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title">Card title</h4>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+											card's content.</p>
+										<a class="btn btn-primary">Button</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 clearfix d-none d-md-block">
+								<div class="card mb-2">
+									<img class="card-img-top" src="rsc/rec3.jpg"
+										alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title">Card title</h4>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+											card's content.</p>
+										<a class="btn btn-primary">Button</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--/.Second slide-->
+
+					<!--Third slide-->
+					<div class="carousel-item">
+
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card mb-2">
+									<img class="card-img-top" src="rsc/rec5.jpg"
+										alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title">Card title</h4>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+											card's content.</p>
+										<a class="btn btn-primary">Button</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 clearfix d-none d-md-block">
+								<div class="card mb-2">
+									<img class="card-img-top" src="rsc/projekt4.jpg"
+										alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title">Card title</h4>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+											card's content.</p>
+										<a class="btn btn-primary">Button</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 clearfix d-none d-md-block">
+								<div class="card mb-2">
+									<img class="card-img-top" src="rsc/projekt1.jpg"
+										alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title">Card title</h4>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+											card's content.</p>
+										<a class="btn btn-primary">Button</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--/.Third slide-->
+
+				</div>
+				<!--/.Slides-->
 
 			</div>
-			<!--/.First slide-->
-
-			<!--Second slide-->
-			<div class="carousel-item">
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card mb-2">
-							<img class="card-img-top" src="rsc/rec7.jpg"
-								alt="Card image cap">
-							<div class="card-body">
-								<a class="btn btn-primary">Button</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 clearfix d-none d-md-block">
-						<div class="card mb-2">
-							<img class="card-img-top" src="rsc/rec1.jpg"
-								alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Card title</h4>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-									card's content.</p>
-								<a class="btn btn-primary">Button</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 clearfix d-none d-md-block">
-						<div class="card mb-2">
-							<img class="card-img-top" src="rsc/rec3.jpg"
-								alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Card title</h4>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-									card's content.</p>
-								<a class="btn btn-primary">Button</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<!--/.Second slide-->
-
-			<!--Third slide-->
-			<div class="carousel-item">
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card mb-2">
-							<img class="card-img-top" src="rsc/rec5.jpg"
-								alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Card title</h4>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-									card's content.</p>
-								<a class="btn btn-primary">Button</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 clearfix d-none d-md-block">
-						<div class="card mb-2">
-							<img class="card-img-top" src="rsc/projekt4.jpg"
-								alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Card title</h4>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-									card's content.</p>
-								<a class="btn btn-primary">Button</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 clearfix d-none d-md-block">
-						<div class="card mb-2">
-							<img class="card-img-top" src="rsc/projekt1.jpg"
-								alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Card title</h4>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-									card's content.</p>
-								<a class="btn btn-primary">Button</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<!--/.Third slide-->
-
-		</div>
-		<!--/.Slides-->
-
-	</div>
-	<!--/.Carousel Wrapper-->
-
-
-</div>
-	<h3>GAME SELECTION</h3>
-	<hr>
-	<div id="projekts">
-		<ul>
-			<li><a href="proj1.html"><img src="rsc/projekt1.jpg" alt="Projekt_01"></a></li>
-			<li><a href="proj2.html"><img src="rsc/projekt2.jpg" alt="Projekt_02"></a></li>
-			<li><a href="proj3.html"><img src="rsc/projekt3.jpg" alt="Projekt_03"></a></li>
-			<li><a href="proj4.html"><img src="rsc/projekt4.jpg" alt="Projekt_04"></a></li>
-			<li><a href="proj5.html"><img src="rsc/projekt5.jpg" alt="Projekt_05"></a></li>
-			<li><a href="proj6.html"><img src="rsc/projekt6.jpg" alt="Projekt_06"></a></li>
-		</ul>
-		<a href="moregames.html">more games</a>
-	</div>
-</section>
+			<!--/.Carousel Wrapper-->
+		</section>
 
 <!-----------Footer----------------------------------------------------------------->
 		<footer>
