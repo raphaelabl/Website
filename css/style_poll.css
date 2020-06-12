@@ -446,7 +446,7 @@ a {text-decoration: none!important; color: white!important}
 
 			.header {
 			overflow: hidden;
-			background-color: gray;
+			background-color: rgb(34, 34, 34);
 			padding: 20px 10px;
 			}
 

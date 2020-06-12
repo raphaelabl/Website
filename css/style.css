@@ -134,9 +134,7 @@ header{
 	left: 0;
 }
 */
-html {
-  scroll-behavior: smooth;
-}
+
 
 .logo{
   width: 240px;
@@ -216,67 +214,6 @@ header nav ul li:hover{
   transform: translate(-50%, -50%);
   margin-top: 7%;
 }
-
-/***WORK*****************************************************************************************
-#work{
-    background-color: #CCD1D0;
-}
-
-#projekts{
-  width: 900px;
-  margin: 0 auto 0 auto;
-}
-
-#projekts ul{
-  padding: 0;
-}
-
-#projekts ul li{
-  width: 33.3%;
-  float: left;
-  margin-bottom: 15px;
-}
-
-#projekts img{
-  width: 280px;
-  height: 170px;
-  border-radius: 5px;
-}
-
-#projekts img:hover{
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-}
-
-/******More Games *******************************************************************************************
-
-#morgames ul{
-	padding: 0;
-}
-
-#moregames ul li{
-	width: 33.3%;
-	float: left;
-	margin-bottom: 15px;
-}
-
-#moregames img{
-	width: 280px;
-	height: 145px;
-	border-radius: 5px;
-}
-
-#moregames img:hover{
-	transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-}
-
 
 /******RECOMMENDATION*****************************************************************************************/
 
